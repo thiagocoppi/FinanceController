@@ -1,3 +1,7 @@
+/**
+ * @author Thiago Coppi
+ * Documents from mongodb
+ */
 const restful = require('node-restful')
 const mongoose = restful.mongoose
 

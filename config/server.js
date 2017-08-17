@@ -1,3 +1,8 @@
+/**
+ * @author Thiago Coppi
+ * @const port are running 3003
+ * This method is a function to connect at integrate express in port 
+ */
 //Porta que rodará o servidor
 const port = 3003
 //Interpretador da requisição
