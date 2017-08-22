@@ -6,7 +6,7 @@ const BillingCycle = require('./billingCycle')
 const _ = require('lodash')
 
 //Create REST services with parameter informed
-BillingCycle.methods(['get','set','post','delete'])
+BillingCycle.methods(['get','put','post','delete'])
 //When update an register return new object and check to validate keys in register update
 BillingCycle.updateOptions({new: true, runValidators: true})
 

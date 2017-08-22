@@ -16,8 +16,8 @@
                 }
             ],
             template: `
-                <div class="{{$ctrl.gridClasses}}">
-                    <div class="small-box {{ $ctrl.colorClass }}">
+                <div class="{{$ctrl.gridClasses}} small-box-size">
+                    <div class="small-box {{ $ctrl.colorClass }} small-box-collor">
                         <div class="inner">
                             <h3> {{ $ctrl.value }}</h3>
                             <p>{{ $ctrl.texto }}</p>

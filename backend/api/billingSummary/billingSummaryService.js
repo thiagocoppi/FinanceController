@@ -18,8 +18,7 @@ function getSummary(req,res){
     },{
         $project: {_id: 0, credit: 1, debt: 1}
     }, function(error,result){
-        //Validate an error in summary service
-        console.log(result)
+        //Validate an error in summary service        
         if(error){
             res.status(500).json({errors : [error]})
         } else { 

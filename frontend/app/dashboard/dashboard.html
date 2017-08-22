@@ -1,10 +1,16 @@
 <content-header name ="Dashboard" small = "Versão 1.0"></content-header>
 
 <section class="content" ng-controller="DashboardCtrl as ctrl">
-    <!-- Créditos -->
-    <value-box grid = "4" color-class = "bg-green" value = "R$ {{ ctrl.credit | number: 2}}" texto = "Valor de Créditos" icon-class = "fa-bank"></value-box>
-    <!-- Débitos -->
-    <value-box grid = "4" color-class = "bg-red" value = "R$ {{ ctrl.debt | number: 2 }}" texto = "Valor de Débitos" icon-class = "fa-credit-card"></value-box>
-    <!-- Total -->
-    <value-box grid = "4" color-class = "bg-blue" value = "R$ {{ ctrl.total | number: 2}}" texto = "Restante" icon-class = "fa-balance-scale"></value-box>        
+    <div class="box box-header with-border">
+        <i class="fa fa-bank"></i><h3 class="box-title">Descrição dos gastos</h3>
+        <div class="box-body">
+            <!-- Créditos -->
+            <value-box grid = "4" color-class = "bg-green" value = "R$ {{ ctrl.credit | number: 2}}" texto = "Valor de Créditos" icon-class = "fa-bank"></value-box>
+            <!-- Débitos -->
+            <value-box grid = "4" color-class = "bg-red" value = "R$ {{ ctrl.debt | number: 2 }}" texto = "Valor de Débitos" icon-class = "fa-credit-card"></value-box>
+            <!-- Total -->
+            <value-box grid = "4" color-class = "bg-blue" value = "R$ {{ ctrl.total | number: 2}}" texto = "Restante" icon-class = "fa-balance-scale"></value-box>        
+        </div>
+    </div>   
 </section>
+
