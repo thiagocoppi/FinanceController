@@ -10,15 +10,17 @@
         </thead>
         <tbody>
             <tr ng-repeat="billingCycle in ctrlBC.billingCycles">
-                <td> {{ billingCycle.name }} </td>
-                <td> {{ billingCycle.month }} </td>
-                <td> {{ billingCycle.year }} </td>
+                <td> {{:: billingCycle.name }} </td>
+                <td> {{:: billingCycle.month }} </td>
+                <td> {{:: billingCycle.year }} </td>
                 <td class="table-actions">  
                     <button class = "btn btn-warning" ng-click="ctrlBC.showTabUpdate(billingCycle)"><i class="fa fa-pencil" ng-click="ctrlBC.showTabUpdate(billingCycle)"></i></button>
                     <button class = "btn btn-danger" ng-click="ctrlBC.showTabDelete(billingCycle)"><i class="fa fa-trash-o" ng-click = "ctrlBC.showTabDelete(billingCycle)"></i></button>
                 </td>
             </tr>
         </tbody>
-
     </table>
+    <div class="box-footer clearfix">
+        <paginator url ="/#!/billingCycles" pages = "{{ctrlBC.pages}}"></paginator>
+    </div>
 </div>

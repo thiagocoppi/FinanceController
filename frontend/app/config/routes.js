@@ -12,7 +12,7 @@
                     })       
                     //Billing Cycle
                     .state('billingcycle',{
-                        url: "/billingcycle",
+                        url: "/billingcycle?page",
                         templateUrl: "billingCycle/tabs.html"
                     })
                 $urlRouterProvider.otherwise('/dashboard')

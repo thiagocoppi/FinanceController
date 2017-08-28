@@ -10,6 +10,8 @@ const bodyParse = require('body-parser')
 //Middleware
 const express = require('express')
 const server = express();
+//transform params to int
+const queryParser = require('express-query-int')
 //const allowCors = require('./cors')
 server.use(function(req,res,next){
     res.header('Access-Control-Allow-Origin','*')
@@ -18,6 +20,7 @@ server.use(function(req,res,next){
     res.header('Access-Control-Allow-Credentials', true);
     next()
 })
+server.use(queryParser())
 server.use(bodyParse.urlencoded({extended: true}))
 server.use(bodyParse.json())
 
